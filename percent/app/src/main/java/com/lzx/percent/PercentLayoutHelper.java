@@ -424,7 +424,7 @@ public class PercentLayoutHelper {
                     mPreservedParams.mIsWidthComputedFromAspectRatio = true;
                 }
                 if (heightNotSet) {
-                    params.height = Math.round(params.width / aspectRatio);
+                    params.height = Math.round(params.width * aspectRatio);
                     // Keep track that we've filled the height based on the width and aspect ratio.
                     mPreservedParams.mIsHeightComputedFromAspectRatio = true;
                 }
